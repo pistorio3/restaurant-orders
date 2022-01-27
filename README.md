@@ -461,7 +461,7 @@ Altere o arquivo `main.py`:
 
 ##### As seguintes verificações serão feitas:
 
-- 4.1 - Será validado se, ao executar o método `add_new_order` para um pedido com prato que não possui ingrediantes suficientes em estoque, o método retorna `False` sem registrar o pedido.
+- 4.1 - Será validado se, ao executar o método `add_new_order` para um pedido com prato que não possui ingredientes suficientes em estoque, o método retorna `False` sem registrar o pedido.
 
 - 4.2 - Será validado se, ao executar o método `get_available_dishes`, o método retorna todos os pratos que possuem ingredientes suficientes para seu preparo.
 
