@@ -5,7 +5,7 @@ from typing import Counter
 
 def path_validator(path):
     if not path.endswith('.csv') or not os.path.exists(path):
-        raise FileNotFoundError(f"File not found in: '{path}'")
+        raise FileNotFoundError(f"No such file or directory: '{path}'")
 
 
 def reader(path):
