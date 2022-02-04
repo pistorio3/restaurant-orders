@@ -1,10 +1,7 @@
-from typing import Counter
-
-
 class TrackOrders:
     def __len__(self):
         return len(self.orders)
-    
+
     def __init__(self):
         self.orders = []
 
@@ -22,7 +19,6 @@ class TrackOrders:
 
     def get_busiest_day(self):
         pass
-
 
     def get_least_busy_day(self):
         pass
