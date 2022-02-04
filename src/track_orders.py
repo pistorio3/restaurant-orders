@@ -20,7 +20,14 @@ class TrackOrders:
         return Counter(most_ordered_dish).most_common(1)[0][0]
 
     def get_never_ordered_per_costumer(self, customer):
-        pass
+        menu = {dish[1] for dish in self.orders}
+
+        orders = {
+            order[1] for order in self.orders
+            if customer == order[0]
+        }
+
+        return (menu - orders)
 
     def get_days_never_visited_per_costumer(self, customer):
         pass
