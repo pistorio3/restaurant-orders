@@ -33,7 +33,7 @@ def dish_counter(customer_name, data):
 
 
 def dish_never_ordered(customer_name, data):
-    menu = { dish[1] for dish in data }
+    menu = {dish[1] for dish in data}
 
     orders = {
         order[1] for order in data
@@ -44,7 +44,7 @@ def dish_never_ordered(customer_name, data):
 
 
 def days_never_attended(customer_name, data):
-    days_week = { day[2] for day in data }
+    days_week = {day[2] for day in data}
 
     day_attended = {
         day[2] for day in data
@@ -72,5 +72,4 @@ def analyze_log(path_to_file):
     quantity = dish_counter('arnaldo', datalog)
     never_ordered = dish_never_ordered('joao', datalog)
     never_attended = days_never_attended('joao', datalog)
-    
     data_saver(most_requested, quantity, never_ordered, never_attended)
